@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!--maven 这一次maven终于自动生成parent标签了 2019-5-11 21:31:11-->
+    <parent>
+        <groupId>com.gagaco</groupId>
+        <artifactId>xczx-fw-parent</artifactId>
+        <version>1.0.1</version>
+        <relativePath>../xczx-fw-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xczx-fw-model</artifactId>
+
+    <!--  2019-5-11 21:31:27-->
+    <dependencies>
+
+        <!--001-->
+        <!--  2019-5-11 21:33:07-->
+        <dependency>
+            <groupId>com.gagaco</groupId>
+            <artifactId>xczx-fw-util</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!--002-->
+        <!--  2019-5-11 21:33:37-->
+        <dependency>
+            <groupId>com.gagaco</groupId>
+            <artifactId>xczx-fw-common</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!--003-->
+        <!--  2019-5-11 21:34:24-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+        <!--004-->
+        <!--  2019-5-11 21:35:41-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--005-->
+        <!--  2019-5-11 21:37:10-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>1.13.9.RELEASE</version>
+        </dependency>
+
+        <!--006-->
+        <!--  2019-5-11 21:38:21-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>1.10.9.RELEASE</version>
+        </dependency>
+
+        <!--007-->
+        <!--  2019-5-11 21:39:50-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.0.12.Final</version>
+        </dependency>
+
+        <!--008-->
+        <!--  2019-5-11 21:40:15-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <!--009-->
+        <!--  2019-5-11 21:43:08-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+        <!--010-->
+        <!--  2019-5-11-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>

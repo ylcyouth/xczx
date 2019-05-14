@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 2019-5-11 20:58:06-->
+    <parent>
+        <groupId>com.gagaco</groupId>
+        <artifactId>xczx-fw-parent</artifactId>
+        <version>1.0.1</version>
+        <relativePath>../xczx-fw-parent/pom.xml</relativePath>
+    </parent>
+    
+    <groupId>com.gagaco</groupId>
+    <artifactId>xczx-fw-common</artifactId>
+    <version>1.0.1</version>
+    <!--<packaging>jar</packaging>-->
+
+    <!-- 2019-5-11 20:59:59-->
+    <dependencies>
+
+        <!-- 2019-5-11 21:01:06-->
+        <!--spring boot管理它的版本-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 2019-5-11 21:08:54-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- 2019-5-11 21:09:41-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+        <!-- 2019-5-11 21:10:10-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <!-- 2019-5-11 21:11:47-->
+        <!--这个没有指定版本，它咋知道的啊，为什么maven自动识别为5.0.5.RELEASE版本的呢-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+        <!-- 2019-5-11 21:16:45-->
+        <!--
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.0.2.RELEASE</version>
+        </dependency>
+
+
+
+    </dependencies>
+
+
+
+
+
+
+
+
+
+
+
+    
+</project>

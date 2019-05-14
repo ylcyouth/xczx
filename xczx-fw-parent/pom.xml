@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--   2019-5-11 18:27:20-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
+    </parent>
+
+    <groupId>com.gagaco</groupId>
+    <artifactId>xczx-fw-parent</artifactId>
+    <version>1.0.1</version>
+    <packaging>pom</packaging>
+
+    <!--   2019-5-11 18:28:09-->
+    <properties>
+        <java.version>1.8</java.version>
+        <tomcat.version>8.5.28</tomcat.version>
+        <spring-boot.version>2.0.1.RELEASE</spring-boot.version>
+        <springframework.version>5.0.5.RELEASE</springframework.version>
+        <mybatis-spring-boot.version>1.3.1</mybatis-spring-boot.version>
+        <mybatis.version>3.4.5</mybatis.version>
+        <druid.version>1.1.6</druid.version>
+        <!--<mysql-connector-java.version>5.1.45</mysql-connector-java.version>    2019-5-11 18:33:14-->
+        <commons-io.version>2.6</commons-io.version>
+        <org.apache.commons.io.version>1.3.2</org.apache.commons.io.version>
+        <commons-fileupload.version>1.3.3</commons-fileupload.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <commons-lang3.version>3.6</commons-lang3.version>
+        <okhttp.version>3.9.1</okhttp.version>
+        <feign-okhttp.version>8.18.0</feign-okhttp.version>
+        <lombok.version>1.16.16</lombok.version>
+        <springfox-swagger.version>2.7.0</springfox-swagger.version>
+        <fastjson.version>1.2.30</fastjson.version>
+        <fastdfs-client-java.version>1.27.0.0</fastdfs-client-java.version>
+        <mysql-connector-java.version>5.1.40</mysql-connector-java.version>
+        <elasticsearch.version>6.2.1</elasticsearch.version>
+        <guava.version>24.0-jre</guava.version>
+    </properties>
+
+    <!--   2019-5-11 18:29:12-->
+    <dependencyManagement>
+        <dependencies>
+
+            <!--   2019-5-11 18:30:54-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--   2019-5-11 18:34:33-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.38</version>
+            </dependency>
+
+            <!--   -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.3.1</version>
+            </dependency>
+
+            <!--   2019-5-11 18:37:39-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-sping-boot-starter</artifactId>
+                <version>1.2.4</version>
+            </dependency>
+
+            <!--   2019-5-11 18:38:37-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.6</version>
+            </dependency>
+
+            <!--   2019-5-11 18:39:39-->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>3.9.1</version>
+            </dependency>
+
+            <!--   2019-5-11 18:40:37-->
+            <dependency>
+                <groupId>com.netflix.feign</groupId>
+                <artifactId>feign-okhttp</artifactId>
+                <version>8.18.0</version>
+            </dependency>
+
+            <!--   2019-5-11 18:41:40-->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.6</version>
+            </dependency>
+
+            <!--   2019-5-11 18:42:50-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>1.3.2</version>
+            </dependency>
+
+            <!--   2019-5-11 18:43:40-->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.3.3</version>
+            </dependency>
+
+            <!--   2019-5-11 18:44:33-->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.10</version>
+            </dependency>
+
+            <!--   2019-5-11 18:45:25-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.6</version>
+            </dependency>
+
+            <!--   2019-5-11 18:46:28-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.16</version>
+            </dependency>
+
+            <!--   2019-5-11 18:47:30-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.7.0</version>
+            </dependency>
+
+            <!--   2019-5-11 18:48:33-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.7.0</version>
+            </dependency>
+
+            <!--   2019-5-11 18:49:14-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.30</version>
+            </dependency>
+
+            <!--   2019-5-11 18:51:37-->
+            <dependency>
+                <groupId>net.oschina.zcx7878</groupId>
+                <artifactId>fastdfs-client-java</artifactId>
+                <version>1.27.0.0</version>
+            </dependency>
+
+            <!--   2019-5-11 18:52:53-->
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>6.2.1</version>
+            </dependency>
+
+            <!--   2019-5-11 18:53:43-->
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>6.2.1</version>
+            </dependency>
+
+            <!--   2019-5-11 18:55:01-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>24.0-jre</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <!--   2019-5-11 18:55:11-->
+    <build>
+
+        <!--   2019-5-11 18:55:37-->
+        <finalName>${project.artifactId}</finalName>
+
+        <!--   2019-5-11 18:56:18-->
+        <plugins>
+
+            <!--   2019-5-11 18:56:35-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!--   2019-5-11 19:01:07-->
+            <!--这里注释掉，原因看：-->
+            <!--父项目这里配了这个插件之后，子项目里面也有了这个插件-->
+            <!--
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            -->
+
+        </plugins>
+    </build>
+
+
+
+    
+</project>

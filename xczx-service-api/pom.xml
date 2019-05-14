@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--  2019-5-11 22:12:59-->
+    <parent>
+        <groupId>com.gagaco</groupId>
+        <artifactId>xczx-fw-parent</artifactId>
+        <version>1.0.1</version>
+        <relativePath>../xczx-fw-parent/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.gagaco</groupId>
+    <artifactId>xczx-service-api</artifactId>
+    <version>1.0.1</version>
+
+    <dependencies>
+        <!--002-->
+        <!--  2019-5-11 22:15:41-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+
+        <!--002-->
+        <!--  2019-5-11 22:16:41-->
+        <dependency>
+            <groupId>com.gagaco</groupId>
+            <artifactId>xczx-fw-model</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.0.12.Final</version>
+        </dependency>-->
+
+        <!--003-->
+        <!--  2019-5-11 22:18:00-->
+        <dependency>
+            <groupId>com.gagaco</groupId>
+            <artifactId>xczx-fw-common</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!--003-->
+        <!--  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--004-->
+        <!--  2019-5-11 22:20:58-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+        <!--005-->
+        <!--  2019-5-11 22:21:36-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+
+        <!--006-->
+        <!--  2019-5-11 22:21:52-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--007-->
+        <!--  2019-5-11 22:22:16-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <!--008-->
+        <!--  2019-5-11 22:22:44-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+        <!--009-->
+        <!--  2019-5-11 22:22:54-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
